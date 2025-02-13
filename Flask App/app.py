@@ -7,7 +7,7 @@ def home():
     return render_template('index.html')
 
 # this is the function for the admin backdoor access:
-@app.route("/sl", methods=["GET","POST"])
+@app.route("/sl", methods=["POST"])
 def adm_log_sec():
 
 	key_adm = ''
